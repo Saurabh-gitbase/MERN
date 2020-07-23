@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+    color: rgb(65, 62, 62);
+}
+#header {
+    height: 100vh;
+    overflow: auto;
+    background-image: url("./header.jpg");
+    background-size: cover;
+    background-position: 0 78%;
+    display: flex;
+    justify-content:space-between;
+  }
+  
+  .logo {
+    font-size: 1.3em;
+    
+    width: 30%;
+    height: 5%;
+    padding: 20px;
+    background-color: bisque;
+  }
+  
+  #nav-bar {
+    width: 70%;
+    height: 5%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    background-color: aqua;
+    /* padding: 20px; */
+  }
+  
+  #nav-bar > a {
+    text-decoration: none;
+    color: rgb(65, 62, 62);
+  }
+
+  .nav-element {
+    background-color: bisque;
+    padding: 0 10px 20px;
+    border: 1px solid black;
+    text-align: center;
+    
+
+  }
