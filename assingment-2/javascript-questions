@@ -1,0 +1,60 @@
+var greetings = {
+    'english':'Hello',
+    'french':'Bonjour',
+    'spanish':'Hola',
+    'russian':'Zdravstvuyte',
+    'german':'Guten Tag'
+}
+
+var greet = (lang) => greetings[lang];
+
+// ###########################################################################
+// #Convert vovels into numbers
+var vovels = {
+    'a':,'1','e':'2','i':'3','o':'4','u':'5'}
+var replaceVovels = (oldString) => {
+ let newString = ''; 
+for(let item of oldString)
+{ 
+if(vovels[item] === undefined){ newString+=item } 
+else { newString+=vovels[item]}} 
+return newString}
+
+// ###########################################################################
+
+#word reverse in a line.
+
+var revWord = (word) => word.split('').reverse().join('');
+
+var specialReverse = (temp,x) => {
+    temp = temp.split(' '); 
+    temp.forEach((item,index) => {
+    
+    if(item[0] === x){
+        temp[index] = revWord(item);
+        }
+}); 
+temp=temp.join(' ');
+return temp;
+}
+
+specialReverse("first man to walk on the moon","m")
+
+
+// ###########################################################################
+
+#testJackpot
+
+var testJackpot = (arr) => {
+  let n = arr.length;
+  for(let i=1;i<n;i++){
+    if(arr[i]!==arr[0])
+      return false;
+  }
+  return true;
+}
+
+// ###########################################################################
+
+#remove Duplicates
+let removeDups = (arr) => [...new Set(arr)] ;
