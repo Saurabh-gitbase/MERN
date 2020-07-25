@@ -1,24 +1,10 @@
-body {
-    margin: 0;
-    color: rgb(65, 62, 62);
-}
-#header {
-    height: 100vh;
-    overflow: auto;
-    background-image: url("./header.jpg");
-    background-size: cover;
-    background-position: 0 78%;
-    display: flex;
-    justify-content:space-between;
-  }
-  
-  .logo {
-    font-size: 1.3em;
+.logo {
+    font-size: 2em;
     
     width: 30%;
     height: 5%;
     padding: 20px;
-    background-color: bisque;
+    /* background-color: bisque; */
   }
   
   #nav-bar {
@@ -26,21 +12,357 @@ body {
     height: 5%;
     padding: 20px;
     display: flex;
-    justify-content: space-between;
-    background-color: aqua;
+    /* font-weight: 400; */
+    
+    /* background-color: aqua; */
     /* padding: 20px; */
   }
+
+  @media(max-width:1277px)
+  {
+    #nav-bar {
+      display: none;
+      padding: 0;
+    }
+  }
   
-  #nav-bar > a {
+  .nav-element {
+    width: calc(100%/7);
+    padding-top: 10px;
+    text-align: center;
+
+    /* background-color: bisque;  */
+     
+    /*padding-right: 10px; */
+    /* border: 1px solid black; */
+  }
+
+  .nav-element > a {
     text-decoration: none;
     color: rgb(65, 62, 62);
-  }
-
-  .nav-element {
-    background-color: bisque;
-    padding: 0 10px 20px;
-    border: 1px solid black;
-    text-align: center;
+    font-size: 1.1em;
     
 
+
   }
+  .nav-element > a:hover {
+    font-weight: 600;
+    border-bottom: 1px solid black;
+
+
+  }
+
+  .info-section {
+    width: 25%;
+    height: 25%;
+    /* background-color: aquamarine; */
+    margin-left: 5vw;
+    margin-top: 30vh;
+  }
+
+  .b-dark {
+    /* background-color: rgb(233, 230, 230); */
+    background-color: rgb(212, 230, 233);
+  }
+  
+  .b-light {
+    background-color: rgb(227, 234, 235);
+  }
+
+  .border-title {
+    border-bottom: 2px solid rgb(26, 23, 23);
+  }
+
+#about-me {
+  height: 100vh;
+}
+
+.about-title {
+  
+  height: 18vh;
+  /* background-color: aqua; */
+  text-align: center;
+  font-size: 2.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+
+
+.about-content {
+  
+  height: 82vh;
+  /* background-color: aquamarine; */
+  display: flex;
+}
+
+.about-img {
+  width: 35%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  
+  /* background-color: bisque; */
+}
+
+.about-desc {
+  width: 65%;
+  height: 100%;
+  /* background-color: rgb(226, 195, 147); */
+  
+  padding-right: 20%;
+  padding-left: 20px;
+}
+
+.about-desc > h3 {
+  font-size: 2em;
+}
+
+.about-desc > h4 {
+  font-size: 1.6em;
+}
+
+.about-desc > p {
+  font-size: 1.3em;
+
+}
+
+.about-desc > button {
+  font-size: 1.0em;
+  width: 20rem;
+  height: 2.5rem;
+  margin-top: 5rem;
+  border: 1px solid rgb(221, 197, 60);;
+  background-color: rgb(247, 227, 113);
+  border-radius: 6px;
+  
+}
+.about-desc > button:hover {
+  box-shadow: 0 5px 30px rgba(240, 46, 170, 0.7);
+}
+
+
+
+#education {
+  height: 100vh;
+  /* background-color: aquamarine; */  
+}
+
+.edu-title {
+  height: 18vh;
+  /* background-color: aqua; */
+  text-align: center;
+  font-size: 2.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.edu-desc {
+  height: 82vh;
+  /* background-color: bisque; */
+  display: flex;
+}
+
+.edu-card {
+  width: calc(100%/3);
+  background-color: rgb(241, 223, 223);
+  margin: 40px 40px 40px 40px;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  font-size: 1.3em;
+  border-radius: 6px;
+  
+  
+}
+
+.edu-card:hover {
+  box-shadow: 0 5px 30px grey;
+}
+
+.skills {
+  height: 100vh;
+  
+}
+
+.skills-title {
+  height: 18vh;
+   /* background-color: aqua;  */
+  text-align: center;
+  font-size: 2.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+
+}
+
+.skills-desc {
+  /* height: 82vh; */
+  margin-right: 5%;
+  margin-left: 5%;
+   /* background-color: bisque;  */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.skills-card {
+  width: calc(100%/4);
+  height: 3.5rem;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+   /* background-color: aquamarine;  */
+  font-size: 1.5rem;
+  border: 1px solid black;
+  border-radius: 6px;
+}
+
+.lang {
+  /* background-color: beige; */
+  margin-right: 5%;
+  margin-left: 5%;
+  height: 30%;
+  margin-top: 30px;
+}
+
+.lang-title {
+  height: 10vh;
+  text-align: center;
+  font-size: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  /* background-color: rgb(235, 114, 114); */
+}
+
+.lang-desc {
+  display: flex;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  
+}
+
+.lang-type {
+  width: calc(100%/3);
+  height: 4rem;
+  margin-top: 40px;
+  text-align: center;
+  font-size:1.5em;
+  /* border: 1px solid black; */
+}
+
+.lang-meter {
+  height: 20px;
+  background-color: rgb(243, 241, 241);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+
+  box-shadow: 0 5px 30px grey;
+}
+
+.lang-meter-val {
+  height: 100%;
+  width: 90%;
+  margin-top: 10px;
+  background-color: greenyellow;
+  
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+
+  
+}
+
+#certificates {
+  height: 65vh;
+  
+}
+
+.certi-desc {
+  height: 40vh;
+  /* background-color: rgb(40, 180, 134); */
+  margin-right: 5%;
+  margin-left: 5%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 20px;
+  column-gap: 20px;
+  
+  
+}
+
+.certi-card {
+  background-color: rgb(241, 223, 223);
+  width: 90%;
+  height: 90%;
+  text-align: center;
+  border-radius: 6px;
+
+}
+
+.card-title {
+  height: 50%;
+  /* background-color: aliceblue; */
+  font-size: 1.5rem;
+  /* padding: 10px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.card-desc {
+  height: 50%;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-box {
+  height: 35vh;
+  background-color: rgb(119, 147, 173); 
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.info {
+  height: 60%;
+  width: calc(100%/5);
+  /* background-color: rgb(206, 196, 191); */
+  font-size: 1.3rem;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.info-detail {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.info > img {
+  height: 50px;
+  width: 50px;
+}
+
+.info-row {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content:space-evenly; 
+  align-items:center;
+}
