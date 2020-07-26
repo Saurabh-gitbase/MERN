@@ -85,3 +85,13 @@ var removeDups = (arr) => [...new Set(arr)] ;
 
 // HARD
 
+//(2) Numbers to String
+
+var numInStr = (arr) => {
+    let result = [];
+    for(let item of arr)
+        for(let i of item)
+            if(parseInt(i)){
+                result.push(item); break;}
+    return result;
+}
