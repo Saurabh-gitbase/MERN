@@ -1,35 +1,60 @@
-var greetings = {
-    'english':'Hello',
-    'french':'Bonjour',
-    'spanish':'Hola',
-    'russian':'Zdravstvuyte',
-    'german':'Guten Tag'
+// VERY EASY 
+//(1)
+
+var convert = (min) => min*60;
+
+//(2)
+
+var dividesEvenly = (a,b) => a%b==0;
+
+// ###########################################################################
+
+//EASY
+//(1)
+
+var charCount = (a,b) => {
+	let count = 0;
+	for(let i of b){
+		if(i===a)
+			count+=1;
+	}
+	return count;
 }
 
-var greet = (lang) => greetings[lang];
+//(2)
+var addUp = (a) => ((1+a)*a/2);
+
+//(3)
+var replaceVowel = (oldString) => {
+	let vowels = {
+    	'a':'1',
+    	'e':'2',
+    	'i':'3',
+    	'o':'4',
+    	'u':'5',
+	}
+	let newString = '';
+	for(let item of oldString)
+	{ 
+		if(vowels[item] === undefined)
+			newString+=item; 
+		else
+			newString+=vowels[item];
+	} 
+	return newString;
+}
 
 // ###########################################################################
-// #Convert vovels into numbers
-var vovels = {
-    'a':,'1','e':'2','i':'3','o':'4','u':'5'}
-var replaceVovels = (oldString) => {
- let newString = ''; 
-for(let item of oldString)
-{ 
-if(vovels[item] === undefined){ newString+=item } 
-else { newString+=vovels[item]}} 
-return newString}
 
-// ###########################################################################
+//MEDIUM
 
-#word reverse in a line.
+//(1) word reverse in a line.
 
 var revWord = (word) => word.split('').reverse().join('');
 
 var specialReverse = (temp,x) => {
     temp = temp.split(' '); 
     temp.forEach((item,index) => {
-    
     if(item[0] === x){
         temp[index] = revWord(item);
         }
@@ -41,9 +66,7 @@ return temp;
 specialReverse("first man to walk on the moon","m")
 
 
-// ###########################################################################
-
-#testJackpot
+//(2) testJackpot.
 
 var testJackpot = (arr) => {
   let n = arr.length;
@@ -54,7 +77,11 @@ var testJackpot = (arr) => {
   return true;
 }
 
+//(3) remove Duplicates.
+
+var removeDups = (arr) => [...new Set(arr)] ;
+
 // ###########################################################################
 
-#remove Duplicates
-let removeDups = (arr) => [...new Set(arr)] ;
+// HARD
+
