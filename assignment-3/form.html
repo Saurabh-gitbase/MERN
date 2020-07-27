@@ -5,43 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script type='text/javascript' src='form.js'></script>
     <title>Form and Events</title>
     
 </head>
 <body>
-  <script>
-      
-      var isUserValid = false;
-      var isPassValid = false;  
-      function checkPass(){
-        let pass1 = document.getElementById("password").value;
-        let pass2 = document.getElementById("confirmPassword").value;
-        if(pass2!==pass1){
-          alert('Confirm Password is not same as Password');
-        }
-        else{
-          this.isPassValid = true;
-          if(this.isUserValid==true)
-            document.querySelector('button').disabled = false;
-          else
-            alert('Username empty');
-        }   
-      };
-
-      function checkUser(){
-        let user = document.getElementById("username").value;
-        if(user==''){
-          alert('Enter username');
-        }
-        else{
-          this.isUserValid=true;
-          if(this.isPassValid==true)
-            document.querySelector('button').disabled = false;
-          else
-            alert('Password empty or does not match');
-        }    
-      };
-    </script>
+  
         <div class="container mt-2">
                 <h1>Registration Form</h1>
                 <form id="registrationForm" onsubmit="alert('successful user registration')">
